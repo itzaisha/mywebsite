@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Delicious Eats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+/* Header */
+.logo {
+    margin-left: 50px;
+    height: 55px;
+    width: 100px;
+}
+.logo:hover{
+    border: 2px solid whitesmoke;
+}
+header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+    padding: 8px;
+    border: 2px solid #ff6347;
+}
+
+/* Reservation Section */
+#reservation {
+    background: url('black.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 150px 40px;
+    text-align: center;
+}
+
+#reservation h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#reservation p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Reservation Form */
+form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e5533d;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+</style>
+<body>
+    <header>
+        <img src="eats.png" alt="Delicious Eats Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="food1.html">Home</a></li>
+                <li><a href="#reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <p>Book your table online now!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" required>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delicious Eats. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
